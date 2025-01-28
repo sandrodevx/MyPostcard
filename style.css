@@ -1,0 +1,76 @@
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px; /* Bordes redondeados para la tarjeta */
+    overflow: hidden; /* Para evitar que las imágenes o contenidos se salgan de los bordes */
+}
+
+.header {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.header img {
+    max-height: 70px;
+    flex-shrink: 0;
+}
+
+.header h1 {
+    flex-grow: 1;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.body .left, 
+.body .right {
+    flex: 1;
+    padding: 0 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    background-color: #4CAF50; /* Color de fondo para el botón */
+    color: white; /* Color de texto */
+    border: none; /* Quitar el borde predeterminado */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse por encima */
+}
