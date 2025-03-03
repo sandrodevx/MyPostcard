@@ -1,32 +1,54 @@
 <!DOCTYPE html>
+<!-- Esto le dice a la computadora que estamos haciendo una página web. Es como decir: "¡Hola, vamos a crear algo genial!" -->
 <html lang="en">
+<!-- Aquí empieza nuestra página web. El "lang=en" significa que está en inglés, pero podríamos cambiarlo a "es" para español. -->
 
 <head>
+    <!-- Esta parte es como la "cabeza" de la página. Aquí ponemos cosas importantes que la página necesita, pero que no se ven directamente. -->
     <meta charset="UTF-8">
+    <!-- Esto le dice a la computadora qué letras y símbolos podemos usar, como las letras con tildes o emojis. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esto ayuda a que la página se vea bien en teléfonos, tablets y computadoras. -->
     <title>Postcard</title>
+    <!-- Este es el título de la página. Aparece en la pestaña del navegador, como una etiqueta en un dibujo. -->
     <link rel="stylesheet" href="style.css">
+    <!-- Aquí enlazamos un archivo llamado "style.css". Es como un libro de colores y formas que le dice a la página cómo verse bonita. -->
 </head>
 
 <body>
+    <!-- ¡Aquí empieza el "cuerpo" de la página! Esto es lo que la gente verá cuando abra la postal. -->
     <div class="card">
+        <!-- Esto es como un cuadro donde pondremos todo el contenido de la postal. -->
         <div class="header">
+            <!-- Esta es la parte de arriba de la postal, como la cabecera. -->
             <h1>My Postcard</h1>
+            <!-- Este es el título de la postal. ¡Es grande y llamativo! -->
             <img src="https://storage.googleapis.com/replit/images/1511936948186_53605a1f8e2f117b874504a42b735a7f.png" />
+            <!-- Aquí ponemos una imagen. Es como pegar una foto en la postal. -->
         </div>
         <div class="body">
+            <!-- Esta es la parte del medio de la postal, donde escribimos el mensaje. -->
             <div class="left">
+                <!-- Aquí está el lado izquierdo, donde pondremos un texto. -->
                 <p>Look how awesome! This is a postcard that I created using HTML5 and CSS3 during my "4 Geeks Academy Course!"</p>
+                <!-- Este es un párrafo. Es como escribir una frase en la postal. -->
                 <p>This is so cool, can't wait to start doing more stuff!</p>
+                <!-- ¡Otro párrafo! Podemos escribir todo lo que queramos aquí. -->
             </div>
             <div class="right">
+                <!-- Este es el lado derecho, donde la persona que recibe la postal puede escribir algo. -->
                 <input type="text" placeholder="Some Name">
+                <!-- Aquí hay un cuadrito para escribir un nombre. "Placeholder" es como una pista que dice "Escribe tu nombre aquí". -->
                 <input type="text" placeholder="Some Email">
-                <input type="text" placeholder="Some Commend">
+                <!-- Otro cuadrito para escribir un correo electrónico. -->
+                <input type="text" placeholder="Some Comment">
+                <!-- Y un último cuadrito para escribir un comentario. -->
             </div>
         </div>
         <div class="footer">
+            <!-- Esta es la parte de abajo de la postal, como el pie de página. -->
             <button>Send My Postcard</button>
+            <!-- ¡Aquí hay un botón! Es como un interruptor que puedes apretar para enviar la postal. -->
         </div>
     </div>
 </body>
