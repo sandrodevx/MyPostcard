@@ -1,6 +1,8 @@
 * {
     box-sizing: inherit;
 }
+/* Esto es como una regla general para todos los elementos de la página. 
+   Les dice que usen el mismo modo de calcular su tamaño. */
 
 body {
     margin: 0;
@@ -8,6 +10,10 @@ body {
     background-color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/* Aquí le damos estilo al "cuerpo" de la página.
+   - margin: 0; y padding: 0; quitan los espacios extra alrededor.
+   - background-color: black; pone el fondo de la página de color negro.
+   - font-family: ...; elige el tipo de letra que usaremos. */
 
 .card {
     max-width: 600px;
@@ -15,36 +21,59 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    border-radius: 15px; /* Bordes redondeados para la tarjeta */
-    overflow: hidden; /* Para evitar que las imágenes o contenidos se salgan de los bordes */
+    border-radius: 15px;
+    overflow: hidden;
 }
+/* Aquí decoramos la "tarjeta" o postal.
+   - max-width: 600px; le da un ancho máximo a la postal.
+   - margin: 100px auto; la centra en la página y le da espacio arriba y abajo.
+   - background-color: white; pone el fondo de la postal en blanco.
+   - display: flex; y flex-direction: column; organizan el contenido en una columna.
+   - border-radius: 15px; redondea las esquinas de la postal.
+   - overflow: hidden; asegura que nada se salga de los bordes. */
 
 .header {
     display: flex;
     gap: 10px;
     padding: 10px;
 }
+/* Aquí decoramos la parte de arriba de la postal (el encabezado).
+   - display: flex; organiza el título y la imagen en una fila.
+   - gap: 10px; deja un espacio entre el título y la imagen.
+   - padding: 10px; da un poco de espacio alrededor del contenido. */
 
 .header img {
     max-height: 70px;
     flex-shrink: 0;
 }
+/* Aquí le damos estilo a la imagen del encabezado.
+   - max-height: 70px; limita la altura de la imagen.
+   - flex-shrink: 0; evita que la imagen se encoja si hay poco espacio. */
 
 .header h1 {
     flex-grow: 1;
 }
+/* Aquí le damos estilo al título del encabezado.
+   - flex-grow: 1; hace que el título ocupe todo el espacio disponible. */
 
 .body {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
+/* Aquí decoramos la parte del medio de la postal (el cuerpo).
+   - display: flex; organiza el contenido en una fila.
+   - justify-content: space-between; separa el lado izquierdo y derecho.
+   - padding: 10px; da un poco de espacio alrededor del contenido. */
 
 .body .left, 
 .body .right {
     flex: 1;
     padding: 0 10px;
 }
+/* Aquí decoramos los lados izquierdo y derecho del cuerpo.
+   - flex: 1; hace que ambos lados ocupen el mismo espacio.
+   - padding: 0 10px; da un poco de espacio a los lados. */
 
 input {
     display: block;
@@ -54,23 +83,44 @@ input {
     border: none;
     border-bottom: 1px solid #BDBDBD;
 }
+/* Aquí decoramos los cuadritos de texto donde la gente puede escribir.
+   - display: block; hace que cada cuadrito ocupe toda la línea.
+   - width: 100%; hace que sean tan anchos como su contenedor.
+   - margin: 5px 0; deja un espacio entre los cuadritos.
+   - padding: 5px; da un poco de espacio dentro del cuadrito.
+   - border: none; quita el borde predeterminado.
+   - border-bottom: 1px solid #BDBDBD; pone una línea gris abajo. */
 
 .footer {
     text-align: center;
     padding: 10px;
 }
+/* Aquí decoramos la parte de abajo de la postal (el pie).
+   - text-align: center; centra el botón.
+   - padding: 10px; da un poco de espacio alrededor. */
 
 button {
     padding: 10px 20px;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 5px; /* Bordes redondeados para el botón */
-    background-color: #4CAF50; /* Color de fondo para el botón */
-    color: white; /* Color de texto */
-    border: none; /* Quitar el borde predeterminado */
-    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
 }
+/* Aquí decoramos el botón.
+   - padding: 10px 20px; le da un tamaño al botón.
+   - font-size: 14px; ajusta el tamaño del texto.
+   - cursor: pointer; cambia el cursor a una manita cuando pasas el mouse.
+   - border-radius: 5px; redondea las esquinas del botón.
+   - background-color: #4CAF50; pone el fondo del botón en verde.
+   - color: white; pone el texto en blanco.
+   - border: none; quita el borde predeterminado.
+   - transition: background-color 0.3s ease; hace que el cambio de color sea suave. */
 
 button:hover {
-    background-color: #45a049; /* Cambio de color al pasar el mouse por encima */
+    background-color: #45a049;
 }
+/* Esto cambia el color del botón cuando pasas el mouse por encima.
+   - background-color: #45a049; pone el fondo en un verde más oscuro. */
